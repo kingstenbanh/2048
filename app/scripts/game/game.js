@@ -1,17 +1,27 @@
 'use strict';
 
-/**
- * @ngdoc function
- * @name twentyfourtyeightApp.controller:MainCtrl
- * @description
- * # MainCtrl
- * Controller of the twentyfourtyeightApp
- */
-angular.module('twentyfourtyeightApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+angular
+  .module('Game', [])
+  .service('GameManager', _GameManager);
+
+function _GameManager() {
+  // Create a new game
+  this.newGame = function() {
+
+  };
+
+  // Handle the move action
+  this.move = function() {
+
+  };
+
+  // Update the score
+  this.updateScore = function(newScore) {
+
+  };
+
+  // Are there moves left?
+  this.movesAvailable = function() {
+
+  };
+}
