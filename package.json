@@ -1,7 +1,11 @@
 {
   "name": "twentyfourtyeight",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "body-parser": "^1.11.0",
+    "express": "^4.11.2",
+    "morgan": "^1.5.1"
+  },
   "repository": {},
   "devDependencies": {
     "grunt": "^0.4.5",
@@ -38,6 +42,6 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "grunt test"
+    "start": "node server.js"
   }
 }
